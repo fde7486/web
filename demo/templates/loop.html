@@ -1,5 +1,10 @@
 <ul>
 {% for i in range(n) %}
-    <li>i = {{i}}</li>
+    <li>
+        loop.index = {{i}}
+        {% if loop.index is divisibleby 3 %}
+        3
+        {% endif %}
+    </li>
 {% endfor %}
 </ul>
